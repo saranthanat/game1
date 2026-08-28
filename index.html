@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>เกมทายตัวเลข</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; margin-top: 50px; }
+        input { padding: 5px; font-size: 16px; }
+        button { padding: 6px 12px; font-size: 16px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>เกมทายตัวเลข (1 - 100)</h1>
+    <p>ลองทายดูว่าฉันคิดเลขอะไรอยู่</p>
+    <input type="number" id="guessInput" min="1" max="100">
+    <button onclick="checkGuess()">ทายเลย</button>
+    <p id="resultMessage"></p>
+
+    <script>
+        // สุ่มเลข 1 ถึง 100
+        let secretNumber = Math.floor(Math.random() * 100) + 1;
+        
+        function checkGuess() {
+            let userGuess = Number(document.getElementById('guessInput').value);
+            let message = document.getElementById('resultMessage');
+            
+            if (userGuess === secretNumber) {
+                message.style.color = 'green';
+                message.innerText = 'ยินดีด้วย! คุณทายถูกแล้ว 🎉';
+            } else if (userGuess > secretNumber) {
+                message.style.color = 'red';
+                message.innerText = 'สูงเกินไป! ลองใหม่อีกครั้ง';
+            } else if (userGuess < secretNumber) {
+                message.style.color = 'blue';
+                message.innerText = 'ต่ำเกินไป! ลองใหม่อีกครั้ง';
+            } else {
+                message.innerText = 'กรุณากรอกตัวเลขที่ถูกต้อง';
+            }
+        }
+    </script>
+</body>
+</html>
