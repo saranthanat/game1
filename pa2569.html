@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>แบบรายงานผลการปฏิบัติงานตามข้อตกลงในการพัฒนางาน (PA) ประจำปีงบประมาณ 2569</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts: Sarabun & Prompt -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0f7ff',
+              100: '#e0effe',
+              200: '#bae0fd',
+              500: '#0284c7',
+              600: '#0369a1',
+              700: '#035485',
+              800: '#075985',
+              900: '#0c4a6e',
+              dark: '#0f2744',
+            }
+          },
+          fontFamily: {
+            prompt: ['Prompt', 'sans-serif'],
+            sarabun: ['Sarabun', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Sarabun', sans-serif;
+      background-color: #f1f5f9;
+      color: #1e293b;
+    }
+    h1, h2, h3, h4, h5, .font-prompt {
+      font-family: 'Prompt', sans-serif;
+    }
+    @media print {
+      body {
+        background-color: #ffffff;
+      }
+      .no-print {
+        display: none !important;
+      }
+      .page-container {
+        width: 100% !important;
+        max-width: none !important;
+        padding: 0 !important;
+        box-shadow: none !important;
+      }
+    }
+    .kpi-gradient {
+      background: linear-gradient(135deg, #075985 0%, #0369a1 100%);
+    }
+    .kpi-gradient-gold {
+      background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+    }
+    .step-badge {
+      clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
+    }
+  </style>
+</head>
+<body class="p-2 sm:p-4 lg:p-6 min-h-screen">
+
+  <!-- Main Container designed for Landscape Infographic view -->
+  <div class="page-container max-w-[1720px] mx-auto bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden">
+    
+    <!-- Top Action Bar (No Print) -->
+    <div class="no-print bg-slate-800 text-white px-6 py-3 flex justify-between items-center text-sm border-b border-slate-700">
+      <div class="flex items-center space-x-2">
+        <i class="fa-solid fa-chart-column text-sky-400 text-lg"></i>
+        <span class="font-prompt font-semibold text-slate-200">ระบบสรุปผลการปฏิบัติงานตามข้อตกลง PA (Landscape Infographic)</span>
+      </div>
+      <button onclick="window.print()" class="bg-sky-600 hover:bg-sky-500 text-white px-4 py-1.5 rounded-lg text-sm font-prompt transition flex items-center shadow-md">
+        <i class="fa-solid fa-print mr-2"></i> พิมพ์ / พิมพ์เป็น PDF
+      </button>
+    </div>
+
+    <!-- HEADER SECTION -->
+    <header class="bg-gradient-to-r from-brand-dark via-brand-900 to-brand-800 text-white p-6 relative overflow-hidden border-b-4 border-sky-400">
+      <!-- Background pattern -->
+      <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+      
+      <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6">
+        
+        <!-- School Logo & Header Title -->
+        <div class="flex items-center gap-5">
+          <div class="bg-white p-2 rounded-xl shadow-lg border border-sky-200 w-24 h-24 flex-shrink-0 flex items-center justify-center">
+            <img src="LOGO-LN.png" alt="ตราโรงเรียนเลิงนกทา" class="max-h-full max-w-full object-contain">
+          </div>
+          <div>
+            <div class="inline-block bg-sky-500/30 text-sky-200 border border-sky-400/30 text-xs px-3 py-1 rounded-full font-prompt tracking-wider uppercase mb-1">
+              แบบรายงานผลการปฏิบัติงานตามข้อตกลงในการพัฒนางาน (PA)
+            </div>
+            <h1 class="text-xl sm:text-2xl md:text-3xl font-bold font-prompt text-white tracking-wide leading-tight">
+              แบบรายงานผลการปฏิบัติงานตามข้อตกลงในการพัฒนางาน (PA)
+            </h1>
+            <p class="text-sky-100 text-sm sm:text-base font-prompt mt-1">
+              สำหรับข้าราชการครูและบุคลากรทางการศึกษา ตำแหน่งครู วิทยฐานะ ครูชำนาญการพิเศษ
+            </p>
+            <div class="mt-2 flex items-center text-xs sm:text-sm text-sky-200 gap-2 font-prompt">
+              <span class="bg-brand-700/80 px-2.5 py-0.5 rounded border border-sky-400/20">
+                <i class="fa-regular fa-calendar-check mr-1.5 text-sky-300"></i>ประจำปีงบประมาณ พ.ศ. 2569
+              </span>
+              <span>•</span>
+              <span>1 ตุลาคม พ.ศ. 2568 ถึง 30 กันยายน พ.ศ. 2569</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Teacher Profile Card Header -->
+        <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-3.5 flex items-center gap-4 shadow-xl min-w-[340px]">
+          <img src="IMG_3958.JPG" alt="นายศรัณย์ธณัท สมคะเณย์" class="w-20 h-24 object-cover rounded-lg border-2 border-sky-300 shadow-md">
+          <div class="text-left">
+            <span class="bg-amber-400 text-slate-900 text-[11px] font-bold px-2 py-0.5 rounded-full font-prompt uppercase">
+              ผู้รายงาน
+            </span>
+            <h2 class="text-lg font-bold font-prompt text-white mt-0.5">นายศรัณย์ธณัท สมคะเณย์</h2>
+            <p class="text-xs text-sky-100 font-prompt">ตำแหน่งครู วิทยฐานะครูชำนาญการพิเศษ</p>
+            <p class="text-xs text-sky-200 mt-1">
+              <i class="fa-solid fa-laptop-code mr-1"></i>กลุ่มสาระการเรียนรู้วิทยาศาสตร์และเทคโนโลยี
+            </p>
+            <p class="text-xs text-sky-300 font-semibold">รายวิชา วิทยาการคำนวณ (ม.4)</p>
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- OVERALL SUMMARY BADGE BAR -->
+    <section class="bg-slate-100 px-6 py-3 border-b border-slate-200 flex flex-wrap items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <span class="bg-brand-900 text-white font-prompt text-xs font-bold px-3 py-1.5 rounded-md flex items-center shadow-sm">
+          <i class="fa-solid fa-award text-amber-400 text-sm mr-2"></i> สรุปผลการประเมิน PA ภาพรวม
+        </span>
+        <p class="text-sm font-prompt font-semibold text-slate-800">
+          ระดับผลการปฏิบัติงาน: <span class="text-brand-600 bg-sky-100 px-2.5 py-0.5 rounded border border-sky-300 font-bold">"การริเริ่ม พัฒนา"</span>
+          <span class="text-emerald-700 font-medium ml-2 text-xs sm:text-sm">
+            <i class="fa-solid fa-circle-check mr-1 text-emerald-600"></i>สูงกว่าระดับฯ ที่คาดหวัง ทั้งเชิงปริมาณและเชิงคุณภาพ
+          </span>
+        </p>
+      </div>
+      <div class="flex items-center gap-4 text-xs font-prompt text-slate-600">
+        <div class="flex items-center gap-1.5 bg-white px-3 py-1 rounded-full border border-slate-200 shadow-sm">
+          <i class="fa-solid fa-users text-sky-600"></i>
+          <span>กลุ่มเป้าหมาย: <b>นักเรียน ชั้น ม.4 (256 คน)</b></span>
+        </div>
+        <div class="flex items-center gap-1.5 bg-white px-3 py-1 rounded-full border border-slate-200 shadow-sm">
+          <i class="fa-solid fa-circle-play text-sky-600"></i>
+          <span>รูปแบบ: <b>Active Learning & AI Hybrid</b></span>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- MAIN CONTENT GRID (2 CHALLENGE TOPICS SIDE-BY-SIDE IN LANDSCAPE VIEW) -->
+    <main class="p-6 grid grid-cols-1 lg:grid-cols-2 gap-8 bg-slate-50">
+
+      <!-- ==================== CHALLENGE TOPIC 1 ==================== -->
+      <article class="bg-white rounded-xl shadow-lg border border-slate-200 overflow-hidden flex flex-col justify-between">
+        <div>
+          <!-- Header Topic 1 -->
+          <div class="bg-gradient-to-r from-brand-900 to-brand-700 p-4 text-white">
+            <div class="flex items-center justify-between mb-1">
+              <span class="bg-sky-500 text-white text-xs font-bold font-prompt px-2.5 py-0.5 rounded-md shadow-sm">
+                ประเด็นท้าทายที่ 1
+              </span>
+              <span class="text-xs text-sky-200 font-prompt">วิชา วิทยาการคำนวณ ม.4</span>
+            </div>
+            <h3 class="text-base sm:text-lg font-bold font-prompt leading-snug">
+              การพัฒนาทักษะด้านวิทยาการคำนวณและเทคโนโลยีสารสนเทศ สำหรับนักเรียนชั้นมัธยมศึกษาปีที่ 4
+            </h3>
+          </div>
+
+          <!-- Section 1: Process Steps (วิธีดำเนินการ) -->
+          <div class="p-5 border-b border-slate-100">
+            <h4 class="text-sm font-bold font-prompt text-brand-900 mb-3 flex items-center border-l-4 border-brand-600 pl-2">
+              <i class="fa-solid fa-list-check text-brand-600 mr-2"></i> วิธีดำเนินการ (5 ขั้นตอนกระบวนการเรียนรู้)
+            </h4>
+
+            <div class="space-y-2.5">
+              
+              <!-- Step 1 -->
+              <div class="bg-slate-50 rounded-lg p-2.5 border-l-4 border-sky-500 hover:bg-sky-50/50 transition">
+                <div class="flex items-start gap-2">
+                  <span class="bg-sky-600 text-white text-xs font-bold font-prompt px-2 py-0.5 rounded flex-shrink-0">
+                    1. วิเคราะห์
+                  </span>
+                  <p class="text-xs text-slate-700 leading-relaxed">
+                    ทดสอบวัดระดับและวิเคราะห์ผู้เรียนด้านวิทยาการคำนวณ เพื่อจำแนกนักเรียนออกเป็น <b>3 กลุ่ม (เก่ง, กลาง, อ่อน)</b>
+                  </p>
+                </div>
+              </div>
+
+              <!-- Step 2 -->
+              <div class="bg-slate-50 rounded-lg p-2.5 border-l-4 border-sky-600 hover:bg-sky-50/50 transition">
+                <div class="flex items-start gap-2">
+                  <span class="bg-sky-700 text-white text-xs font-bold font-prompt px-2 py-0.5 rounded flex-shrink-0">
+                    2. วางแผน
+                  </span>
+                  <p class="text-xs text-slate-700 leading-relaxed">
+                    วิเคราะห์หลักสูตรแกนกลาง/สสวท. จัดทำ <b>แผนการเรียนรู้ 14 แผน</b> พร้อมสร้าง <b>Google Classroom 6 ห้องเรียน</b>
+                  </p>
+                </div>
+              </div>
+
+              <!-- Step 3 -->
+              <div class="bg-slate-50 rounded-lg p-2.5 border-l-4 border-sky-700 hover:bg-sky-50/50 transition">
+                <div class="flex items-start gap-2">
+                  <span class="bg-sky-800 text-white text-xs font-bold font-prompt px-2 py-0.5 rounded flex-shrink-0">
+                    3. ปฏิบัติการสอน
+                  </span>
+                  <div class="text-xs text-slate-700 leading-relaxed space-y-1">
+                    <p>• สอนด้วยปัญหาเป็นฐาน (Problem-Based Learning) ฝึกคิดอัลกอริธึมแบบเป็นระบบ</p>
+                    <p>• ใช้กระบวนการกลุ่ม + Google Classroom + สื่อ YouTube และกิจกรรม "เพื่อนช่วยเพื่อน"</p>
+                    <p>• ครูทำหน้าที่เป็นพี่เลี้ยง (Mentor) คอยให้คำแนะนำการใช้แอปพลิเคชันอย่างใกล้ชิด</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Step 4 -->
+              <div class="bg-slate-50 rounded-lg p-2.5 border-l-4 border-sky-800 hover:bg-sky-50/50 transition">
+                <div class="flex items-start gap-2">
+                  <span class="bg-sky-900 text-white text-xs font-bold font-prompt px-2 py-0.5 rounded flex-shrink-0">
+                    4. บันทึกหลังสอน
+                  </span>
+                  <p class="text-xs text-slate-700 leading-relaxed">
+                    บันทึกผลใน Classroom นำสะท้อนคิดมาทำวิจัยชั้นเรียน/นวัตกรรม พร้อมประเมินความพึงพอใจและสรุปผ่าน Google Sheets
+                  </p>
+                </div>
+              </div>
+
+              <!-- Step 5 -->
+              <div class="bg-slate-50 rounded-lg p-2.5 border-l-4 border-brand-dark hover:bg-sky-50/50 transition">
+                <div class="flex items-start gap-2">
+                  <span class="bg-brand-dark text-white text-xs font-bold font-prompt px-2 py-0.5 rounded flex-shrink-0">
+                    5. วัดประเมินผล
+                  </span>
+                  <p class="text-xs text-slate-700 leading-relaxed">
+                    วัดผลผ่านข้อสอบกลางภาค-ปลายภาค และการประเมินใบงาน นำคะแนนจัดทำรายงานผลสัมฤทธิ์ทางการเรียน
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Section 2: Expected Outcomes (ผลลัพธ์ที่คาดหวัง) -->
+          <div class="p-5 bg-sky-50/40">
+            <h4 class="text-sm font-bold font-prompt text-brand-900 mb-3 flex items-center border-l-4 border-emerald-500 pl-2">
+              <i class="fa-solid fa-chart-line text-emerald-600 mr-2"></i> ผลลัพธ์การเรียนรู้ที่คาดหวัง (ประเด็นที่ 1)
+            </h4>
+
+            <!-- Quantitative Stats Cards -->
+            <div class="grid grid-cols-2 gap-3 mb-4">
+              <!-- KPI Card 1 -->
+              <div class="bg-white p-3 rounded-lg border border-sky-200 shadow-sm flex flex-col justify-between">
+                <div>
+                  <div class="text-[11px] font-prompt text-slate-500 font-medium">ผลสัมฤทธิ์ระดับ 3 ขึ้นไป</div>
+                  <div class="flex items-baseline gap-1 mt-1">
+                    <span class="text-2xl font-bold font-prompt text-brand-700">82.81%</span>
+                    <span class="text-[10px] text-emerald-600 font-bold font-prompt">
+                      <i class="fa-solid fa-arrow-up"></i> เป้าหมาย 70%
+                    </span>
+                  </div>
+                </div>
+                <div class="w-full bg-slate-200 rounded-full h-1.5 mt-2 overflow-hidden">
+                  <div class="bg-emerald-500 h-1.5 rounded-full" style="width: 82.81%"></div>
+                </div>
+              </div>
+
+              <!-- KPI Card 2 -->
+              <div class="bg-white p-3 rounded-lg border border-sky-200 shadow-sm flex flex-col justify-between">
+                <div>
+                  <div class="text-[11px] font-prompt text-slate-500 font-medium">ความพึงพอใจต่อการเรียนรู้</div>
+                  <div class="flex items-baseline gap-1 mt-1">
+                    <span class="text-2xl font-bold font-prompt text-brand-700">4.51</span>
+                    <span class="text-[10px] text-slate-500 font-prompt">/ 5.00 (เป้า 3.50)</span>
+                  </div>
+                </div>
+                <div class="text-[11px] text-emerald-700 font-semibold font-prompt mt-1">
+                  <i class="fa-solid fa-star text-amber-400"></i> ระดับ "มากที่สุด"
+                </div>
+              </div>
+            </div>
+
+            <!-- Qualitative Card -->
+            <div class="bg-white p-3 rounded-lg border border-slate-200 text-xs text-slate-700">
+              <span class="font-bold text-brand-800 font-prompt block mb-1">
+                <i class="fa-solid fa-bullseye text-sky-600 mr-1"></i> เชิงคุณภาพ:
+              </span>
+              นักเรียนชั้น ม.4 มีความรู้ด้านวิทยาการคำนวณและเทคโนโลยีสารสนเทศ สามารถเชื่อมโยงความรู้กับวิชาอื่น และนำไปประยุกต์ใช้ในชีวิตจริงได้อย่างมีประสิทธิภาพ
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Footnote Topic 1 -->
+        <div class="bg-slate-100 px-5 py-2 border-t border-slate-200 text-[11px] font-prompt text-slate-500 flex justify-between">
+          <span>กลุ่มเป้าหมาย: ม.4 จำนวน 256 คน</span>
+          <span class="text-emerald-700 font-semibold">บรรลุเป้าหมายตามข้อตกลง PA</span>
+        </div>
+      </article>
+
+
+      <!-- ==================== CHALLENGE TOPIC 2 ==================== -->
+      <article class="bg-white rounded-xl shadow-lg border border-slate-200 overflow-hidden flex flex-col justify-between">
+        <div>
+          <!-- Header Topic 2 -->
+          <div class="bg-gradient-to-r from-brand-800 to-sky-800 p-4 text-white">
+            <div class="flex items-center justify-between mb-1">
+              <span class="bg-sky-400 text-slate-900 text-xs font-bold font-prompt px-2.5 py-0.5 rounded-md shadow-sm">
+                ประเด็นท้าทายที่ 2
+              </span>
+              <span class="text-xs text-sky-200 font-prompt">สมรรถนะเทคโนโลยี & ทักษะดิจิทัล</span>
+            </div>
+            <h3 class="text-base sm:text-lg font-bold font-prompt leading-snug">
+              การพัฒนาสมรรถนะสำคัญของผู้เรียน ด้านการใช้เทคโนโลยีและทักษะดิจิทัล ด้วยเทคโนโลยีสมัยใหม่ (AI)
+            </h3>
+          </div>
+
+          <!-- Section 1: Process Steps (วิธีดำเนินการ) -->
+          <div class="p-5 border-b border-slate-100">
+            <h4 class="text-sm font-bold font-prompt text-brand-900 mb-3 flex items-center border-l-4 border-sky-600 pl-2">
+              <i class="fa-solid fa-list-check text-sky-600 mr-2"></i> วิธีดำเนินการ (5 ขั้นตอนนวัตกรรม AI & Digital)
+            </h4>
+
+            <div class="space-y-2.5">
+              
+              <!-- Step 1 -->
+              <div class="bg-slate-50 rounded-lg p-2.5 border-l-4 border-indigo-500 hover:bg-sky-50/50 transition">
+                <div class="flex items-start gap-2">
+                  <span class="bg-indigo-600 text-white text-xs font-bold font-prompt px-2 py-0.5 rounded flex-shrink-0">
+                    1. วิเคราะห์
+                  </span>
+                  <p class="text-xs text-slate-700 leading-relaxed">
+                    วัดทักษะดิจิทัล จำแนกนักเรียนชั้น ม.4 รวม <b>256 คน</b> เป็นกลุ่มเก่ง กลาง และอ่อน เพื่อวางแผนดูแลตรงจุด
+                  </p>
+                </div>
+              </div>
+
+              <!-- Step 2 -->
+              <div class="bg-slate-50 rounded-lg p-2.5 border-l-4 border-indigo-600 hover:bg-sky-50/50 transition">
+                <div class="flex items-start gap-2">
+                  <span class="bg-indigo-700 text-white text-xs font-bold font-prompt px-2 py-0.5 rounded flex-shrink-0">
+                    2. วางแผน
+                  </span>
+                  <p class="text-xs text-slate-700 leading-relaxed">
+                    จัดทำ <b>14 แผนการเรียนรู้</b> + <b>Classroom & AI 8 ห้อง</b> + <b>LINE Group</b> & แพลตฟอร์ม <b>iStudent</b> ติดตามผู้เรียน
+                  </p>
+                </div>
+              </div>
+
+              <!-- Step 3 -->
+              <div class="bg-slate-50 rounded-lg p-2.5 border-l-4 border-indigo-700 hover:bg-sky-50/50 transition">
+                <div class="flex items-start gap-2">
+                  <span class="bg-indigo-800 text-white text-xs font-bold font-prompt px-2 py-0.5 rounded flex-shrink-0">
+                    3. ปฏิบัติการสอน
+                  </span>
+                  <div class="text-xs text-slate-700 leading-relaxed space-y-1">
+                    <p>• <b> Active Learning + AI Integrations:</b> สอน 3 หน่วย (แนวคิดเชิงคำนวณ, ขั้นตอนวิธี, โครงงานสร้างสรรค์)</p>
+                    <p>• เช็คชื่อใกล้ชิด ส่ง SMS/โทรตามผู้ปกครองผ่าน iStudent ครูแนะนำเทคโนโลยี/AI บูรณาการจริยธรรม</p>
+                    <p>• มีทางเลือก "ใบงานสมุด" รองรับนักเรียนที่ขาดแคลนอุปกรณ์ ลดข้อจำกัดการเรียนรู้</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Step 4 -->
+              <div class="bg-slate-50 rounded-lg p-2.5 border-l-4 border-indigo-800 hover:bg-sky-50/50 transition">
+                <div class="flex items-start gap-2">
+                  <span class="bg-indigo-900 text-white text-xs font-bold font-prompt px-2 py-0.5 rounded flex-shrink-0">
+                    4. บันทึกหลังสอน
+                  </span>
+                  <p class="text-xs text-slate-700 leading-relaxed">
+                    ตรวจงานพร้อมส่ง Feedback/คะแนนทาง Email/Classroom <b>ใช้วิเคราะห์ผลด้วย AI</b> ทำวิจัยชั้นเรียนและนวัตกรรม
+                  </p>
+                </div>
+              </div>
+
+              <!-- Step 5 -->
+              <div class="bg-slate-50 rounded-lg p-2.5 border-l-4 border-brand-dark hover:bg-sky-50/50 transition">
+                <div class="flex items-start gap-2">
+                  <span class="bg-brand-dark text-white text-xs font-bold font-prompt px-2 py-0.5 rounded flex-shrink-0">
+                    5. วัดประเมินผล
+                  </span>
+                  <p class="text-xs text-slate-700 leading-relaxed">
+                    ประเมินข้อสอบมาตรฐาน (ปรนัย/อัตนัย) + ทดสอบย่อย + ประเมินสมรรถนะการใช้เทคโนโลยีสารสนเทศ
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Section 2: Expected Outcomes (ผลลัพธ์ที่คาดหวัง) -->
+          <div class="p-5 bg-sky-50/40">
+            <h4 class="text-sm font-bold font-prompt text-brand-900 mb-3 flex items-center border-l-4 border-emerald-500 pl-2">
+              <i class="fa-solid fa-chart-pie text-emerald-600 mr-2"></i> ผลลัพธ์การเรียนรู้ที่คาดหวัง (ประเด็นที่ 2)
+            </h4>
+
+            <!-- Quantitative Stats Cards -->
+            <div class="grid grid-cols-2 gap-3 mb-4">
+              <!-- KPI Card 1 -->
+              <div class="bg-white p-3 rounded-lg border border-sky-200 shadow-sm flex flex-col justify-between">
+                <div>
+                  <div class="text-[11px] font-prompt text-slate-500 font-medium">ประเมินสมรรถนะเทคโนโลยี ผ่านเกณฑ์ระดับ 2</div>
+                  <div class="flex items-baseline gap-1 mt-1">
+                    <span class="text-2xl font-bold font-prompt text-brand-700">80.00%</span>
+                    <span class="text-[10px] text-emerald-600 font-bold font-prompt">
+                      <i class="fa-solid fa-arrow-up"></i> เป้าหมาย 70%
+                    </span>
+                  </div>
+                </div>
+                <div class="w-full bg-slate-200 rounded-full h-1.5 mt-2 overflow-hidden">
+                  <div class="bg-emerald-500 h-1.5 rounded-full" style="width: 80%"></div>
+                </div>
+              </div>
+
+              <!-- KPI Card 2 -->
+              <div class="bg-white p-3 rounded-lg border border-sky-200 shadow-sm flex flex-col justify-between">
+                <div>
+                  <div class="text-[11px] font-prompt text-slate-500 font-medium">ความพึงพอใจต่อการเรียนรู้</div>
+                  <div class="flex items-baseline gap-1 mt-1">
+                    <span class="text-2xl font-bold font-prompt text-brand-700">4.60</span>
+                    <span class="text-[10px] text-slate-500 font-prompt">/ 5.00 (เป้า 3.50)</span>
+                  </div>
+                </div>
+                <div class="text-[11px] text-emerald-700 font-semibold font-prompt mt-1">
+                  <i class="fa-solid fa-star text-amber-400"></i> ระดับ "มากที่สุด"
+                </div>
+              </div>
+            </div>
+
+            <!-- Qualitative Card -->
+            <div class="bg-white p-3 rounded-lg border border-slate-200 text-xs text-slate-700">
+              <span class="font-bold text-brand-800 font-prompt block mb-1">
+                <i class="fa-solid fa-bullseye text-sky-600 mr-1"></i> เชิงคุณภาพ:
+              </span>
+              นักเรียนมีความรู้ทักษะดิจิทัล มีจริยธรรมและความรับผิดชอบในการใช้เทคโนโลยี สามารถเชื่อมโยงการเรียนรู้และประยุกต์ใช้ในชีวิตจริงได้อย่างมีประสิทธิภาพ
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Footnote Topic 2 -->
+        <div class="bg-slate-100 px-5 py-2 border-t border-slate-200 text-[11px] font-prompt text-slate-500 flex justify-between">
+          <span>ประเมินครอบคลุม 256 คน</span>
+          <span class="text-emerald-700 font-semibold">บรรลุเป้าหมายตามข้อตกลง PA</span>
+        </div>
+      </article>
+
+    </main>
+
+
+    <!-- EXECUTIVE SUMMARY BANNER -->
+    <section class="mx-6 mb-6 p-5 bg-gradient-to-r from-brand-900 via-brand-800 to-sky-900 text-white rounded-xl shadow-lg border border-sky-300/30 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-4">
+        <div class="w-14 h-14 rounded-full bg-amber-400 text-slate-900 flex items-center justify-center text-2xl font-bold flex-shrink-0 shadow-md">
+          <i class="fa-solid fa-medal"></i>
+        </div>
+        <div>
+          <h4 class="text-base sm:text-lg font-bold font-prompt text-amber-300">
+            สรุปผลการดำเนินการตามข้อตกลงในการพัฒนางาน (PA) ประจำปี 2569
+          </h4>
+          <p class="text-xs sm:text-sm text-sky-100 font-prompt mt-0.5 leading-relaxed">
+            การพัฒนาทักษะด้านวิทยาการคำนวณ เทคโนโลยีสารสนเทศ และทักษะดิจิทัลด้วยเทคโนโลยีสมัยใหม่ (AI) อยู่ในระดับ
+            <strong class="text-white underline decoration-amber-400 decoration-2">"การริเริ่ม พัฒนา"</strong> 
+            สูงกว่าระดับฯ ที่คาดหวัง ทั้งในส่วนของผลลัพธ์เชิงปริมาณและเชิงคุณภาพ
+          </p>
+        </div>
+      </div>
+      <div class="bg-white/10 backdrop-blur px-4 py-2 rounded-lg border border-white/20 text-center flex-shrink-0">
+        <span class="text-xs text-sky-200 font-prompt block">สถานะการประเมิน</span>
+        <span class="text-sm font-bold font-prompt text-emerald-300">
+          <i class="fa-solid fa-circle-check mr-1"></i> ผ่านการประเมิน
+        </span>
+      </div>
+    </section>
+
+
+    <!-- ACTION / CLASSROOM EVIDENCE GALLERY -->
+    <section class="px-6 pb-6">
+      <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+        <div class="flex items-center justify-between mb-4 border-b border-slate-200 pb-3">
+          <h4 class="text-base font-bold font-prompt text-brand-900 flex items-center">
+            <i class="fa-solid fa-images text-sky-600 mr-2"></i> ภาพบรรยากาศการจัดการเรียนรู้และผลลัพธ์การปฏิบัติงาน
+          </h4>
+          <span class="text-xs font-prompt text-slate-500">
+            ห้องปฏิบัติการคอมพิวเตอร์ โรงเรียนเลิงนกทา
+          </span>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-3">
+          
+          <!-- Image 1 -->
+          <div class="group relative rounded-lg overflow-hidden border border-slate-200 shadow-xs hover:shadow-md transition">
+            <img src="IMG_8222.JPG" alt="การเรียนการสอนวิทยาการคำนวณและ AI" class="w-full h-36 object-cover group-hover:scale-105 transition duration-300">
+            <div class="p-2 bg-slate-900/80 text-white text-[11px] font-prompt truncate">
+              การจัดการเรียนรู้ AI & คอมพิวเตอร์
+            </div>
+          </div>
+
+          <!-- Image 2 -->
+          <div class="group relative rounded-lg overflow-hidden border border-slate-200 shadow-xs hover:shadow-md transition">
+            <img src="IMG_7942.JPG" alt="กิจกรรมเพื่อนช่วยเพื่อน และ Active Learning" class="w-full h-36 object-cover group-hover:scale-105 transition duration-300">
+            <div class="p-2 bg-slate-900/80 text-white text-[11px] font-prompt truncate">
+              กิจกรรม Active Learning & กลุ่ม
+            </div>
+          </div>
+
+          <!-- Image 3 -->
+          <div class="group relative rounded-lg overflow-hidden border border-slate-200 shadow-xs hover:shadow-md transition">
+            <img src="IMG_7477.JPG" alt="ครูทำหน้าที่พี่เลี้ยงคอยดูแลนักเรียน" class="w-full h-36 object-cover group-hover:scale-105 transition duration-300">
+            <div class="p-2 bg-slate-900/80 text-white text-[11px] font-prompt truncate">
+              ครูเป็นพี่เลี้ยง (Mentor) ดูแลใกล้ชิด
+            </div>
+          </div>
+
+          <!-- Image 4 -->
+          <div class="group relative rounded-lg overflow-hidden border border-slate-200 shadow-xs hover:shadow-md transition">
+            <img src="IMG_7406.JPG" alt="การวัดประเมินผลและการมีส่วนร่วม" class="w-full h-36 object-cover group-hover:scale-105 transition duration-300">
+            <div class="p-2 bg-slate-900/80 text-white text-[11px] font-prompt truncate">
+              บรรยากาศการเรียนและการฝึกทักษะ
+            </div>
+          </div>
+
+          <!-- Image 5 -->
+          <div class="group relative rounded-lg overflow-hidden border border-slate-200 shadow-xs hover:shadow-md transition">
+            <img src="IMG_7423.JPG" alt="การใช้เทคโนโลยีและสืบค้นข้อมูล" class="w-full h-36 object-cover group-hover:scale-105 transition duration-300">
+            <div class="p-2 bg-slate-900/80 text-white text-[11px] font-prompt truncate">
+              การให้คำแนะนำและแนะนำสื่อ AI
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-dark text-slate-300 px-6 py-4 border-t border-brand-800 text-xs font-prompt flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div>
+        <b>นายศรัณย์ธณัท สมคะเณย์</b> • ตำแหน่งครู วิทยฐานะครูชำนาญการพิเศษ • โรงเรียนเลิงนกทา จังหวัดยโสธร
+      </div>
+      <div class="text-sky-400">
+        เอกสารรายงานผลการปฏิบัติงานตามข้อตกลง PA (พ.ศ. 2569)
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>
